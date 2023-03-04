@@ -17,10 +17,11 @@ public class Celsius2FahrenheitTesttreiber {
         Celsius2FahrenheitTesttreiber.Celsius2FahrenheitTesttreiber();
 
         // übergabe Arrays an Methode berechneCelsius2Fahrenheit
-        //      Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsius, fahrenheit);
-        // Erhalte, double fahrenheit[] zurück
-        // Übergebe double fahrenheit[] an ausgeben
-        //      Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
+        Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsius, fahrenheit);
+        // Erhalte, double fahrenheit[] zurück //TODO wie erhalte ich einen Wert aus der anderen Klasse und Methode zurück wenn die Methode void ist
+
+        // Übergebe, double fahrenheit[] an ausgeben
+        Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
 
     }
     public static void Celsius2FahrenheitTesttreiber() {

@@ -6,13 +6,19 @@ public class Celsius2Fahrenheit {
         for (int m : celsius) {
             fahrenheitDouble[m] = celsius[m];
         }
+        // Test out for berechneCelsius2Fahrenheit[]
         for (double i : fahrenheitDouble) {
             System.out.println("fahrenheitDouble: " + fahrenheitDouble[(int)i]);
         }
 
 
+
+
+
     }
     public static void ausgeben(double fahrenheit[]) {
-
+        for (double a : fahrenheit) {
+            System.out.println("Fahrenheit: " + fahrenheit[(int) a]);
+        }
     }
 }
