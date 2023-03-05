@@ -10,6 +10,7 @@ public class Celsius2Fahrenheit {
         for (double i : fahrenheitDouble) {
             System.out.println("fahrenheitDouble: " + fahrenheitDouble[(int)i]);
         }
+        Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
 
 
 

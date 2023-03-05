@@ -15,6 +15,8 @@ public class Celsius2FahrenheitTesttreiber {
         double fahrenheitDouble[] = new double[anzahlCelsiusWerte];
         // übergabe Arrays an Testtreiber
         Celsius2FahrenheitTesttreiber.Celsius2FahrenheitTesttreiber();
+        System.out.println("Bis hier ausgabe Testtreiber");
+
 
         // übergabe Arrays an Methode berechneCelsius2Fahrenheit
         Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsius, fahrenheit);
