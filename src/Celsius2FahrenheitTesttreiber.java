@@ -1,12 +1,19 @@
 import java.util.Scanner;
+import java.util.Random;
 public class Celsius2FahrenheitTesttreiber {
     public static void main(String [] args) {
         // Initialisiere Scanner
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         // Initialisiere Anzahl an Celsius werten
         int anzahlCelsiusWerte; //TODO mit random Math generieren NICHT mit Scanner einlesen
         // Lese n für Anzahl an Celsius werten ein
-        anzahlCelsiusWerte  = scanner.nextInt();
+        // anzahlCelsiusWerte  = scanner.nextInt();
+        // int random initalisieren
+        Random rand = new Random();
+        // anzahlCelsiusWert wird eine random Zahl zugewiesen
+        // int value = rand.nextInt(50);
+        anzahlCelsiusWerte = rand.nextInt(50);
+        System.out.println("Math.random: " + anzahlCelsiusWerte);
         // Initialisierung int celsius[] und weise Anzahl an plätzen zu, welche mit scanner anzahlCelsiusWerten eingelesen wird
         int celsius[] = new int[anzahlCelsiusWerte];
         // Initialisierung int fahrenheit[] mit selber Größe wie celsius[]
