@@ -1,19 +1,24 @@
 import javax.imageio.ImageTranscoder;
 import java.util.Scanner;
-import java.util.Random;
+import java.lang.Math;
 public class Celsius2FahrenheitTesttreiber {
-    // int random initialisieren
-    static Random rand = new Random();
     public static void main(String [] args) {
+
+        // Aufruf Testtreiber
+        Celsius2FahrenheitTesttreiber.Celsius2FahrenheitTesttreiber();
+        System.out.println("Bis hier ausgabe Testtreiber");
+
+
+
+    }
+    public static void Celsius2FahrenheitTesttreiber() {
         // Initialisiere Scanner
-        // Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // Initialisiere Anzahl an Celsius werten
         int anzahlCelsiusWerte; //TODO mit random Math generieren NICHT mit Scanner einlesen
         // Lese n für Anzahl an Celsius werten ein
-        // anzahlCelsiusWerte  = scanner.nextInt();
+        anzahlCelsiusWerte  = scanner.nextInt();
         // anzahlCelsiusWert wird eine random Zahl zugewiesen
-        // int value = rand.nextInt(50);
-        anzahlCelsiusWerte = rand.nextInt(5);
         System.out.println("Math.random: " + anzahlCelsiusWerte);
         // Initialisierung int celsius[] und weise Anzahl an plätzen zu, welche mit scanner anzahlCelsiusWerten eingelesen wird
         int celsius[] = new int[anzahlCelsiusWerte];
@@ -21,14 +26,18 @@ public class Celsius2FahrenheitTesttreiber {
         int fahrenheit[] = new int[anzahlCelsiusWerte];
         // Initialisierung double fahrenheit[]
         double fahrenheitDouble[] = new double[anzahlCelsiusWerte];
+        /* // Variable double für Math.random
+        double zwischenspeicherCelsius[] = new double[0]; */
         // Array celsius befüllen
-        for (int r : celsius) {
-            celsius[r] = rand.nextInt();
+        for (int r = 0; r < celsius.length; r++) {
+            celsius[r] = (int) (Math.random() * 100);
+            System.out.println("looop: " + celsius[r]);
         }
-        // übergabe Arrays an Testtreiber
-        Celsius2FahrenheitTesttreiber.Celsius2FahrenheitTesttreiber();
-        System.out.println("Bis hier ausgabe Testtreiber");
-
+        System.out.println("celsius länge: " + celsius.length);
+        for (int c : celsius) {
+            System.out.println(c);
+        }
+        System.out.println("fahrenheit länge: " + fahrenheit.length);
 
         // übergabe Arrays an Methode berechneCelsius2Fahrenheit
         Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsius, fahrenheit);
@@ -37,15 +46,14 @@ public class Celsius2FahrenheitTesttreiber {
         // Übergebe, double fahrenheit[] an ausgeben
         Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
 
-    }
-    public static void Celsius2FahrenheitTesttreiber() {
-        int celsiusTesttreiber[] = new int[3];
+
+        /* int celsiusTesttreiber[] = new int[3];
         int fahrenheitTesttreiber[] = new int[3];
         for (int l : celsiusTesttreiber) {
-            celsiusTesttreiber[l] = rand.nextInt(5);
+            celsiusTesttreiber[l] = (int) Math.random();
         }
         double fahrenheitDoubleTesttreiber[] = new double[3];
-        Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsiusTesttreiber, fahrenheitTesttreiber);
+        Celsius2Fahrenheit.berechneCelsius2Fahrenheit(celsiusTesttreiber, fahrenheitTesttreiber); */
     }
 
 }
