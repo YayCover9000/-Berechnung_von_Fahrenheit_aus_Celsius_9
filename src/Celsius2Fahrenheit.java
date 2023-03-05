@@ -4,7 +4,7 @@ public class Celsius2Fahrenheit {
         // Initialise double fahrenheitDouble[]
         double fahrenheitDouble[] = new double[celsius.length];
         for (int m : celsius) {
-            fahrenheitDouble[m] = celsius[m];
+            fahrenheitDouble[m] = (1.8 * celsius[m] + 32);
         }
         // Test out for berechneCelsius2Fahrenheit[]
         for (double i : fahrenheitDouble) {
