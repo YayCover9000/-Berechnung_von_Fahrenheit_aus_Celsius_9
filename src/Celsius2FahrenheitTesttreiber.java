@@ -44,7 +44,7 @@ public class Celsius2FahrenheitTesttreiber {
         // Erhalte, double fahrenheit[] zurück //TODO wie erhalte ich einen Wert aus der anderen Klasse und Methode zurück wenn die Methode void ist
 
         // Übergebe, double fahrenheit[] an ausgeben
-        Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
+        //Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
 
 
         /* int celsiusTesttreiber[] = new int[3];
