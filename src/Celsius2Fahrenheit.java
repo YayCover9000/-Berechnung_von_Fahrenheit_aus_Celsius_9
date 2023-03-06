@@ -9,8 +9,12 @@ public class Celsius2Fahrenheit {
         Celsius2Fahrenheit.ausgeben(fahrenheitDouble);
     }
     public static void ausgeben(double fahrenheit[]) {
-        for (double a : fahrenheit) {
-            System.out.println("Fahrenheit: " + a);
+        if(fahrenheit == null){
+            System.out.println("Array ist leer.");
+        } else {
+            for (double a : fahrenheit) {
+                System.out.println("Fahrenheit: " + a);
+            }
         }
     }
 }
